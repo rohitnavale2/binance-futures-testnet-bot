@@ -1,0 +1,13 @@
+2026-07-29 05:17:09 | INFO     | trading_bot.orders | Order request summary: symbol=BTCUSDT | side=BUY | type=MARKET | quantity=0.01
+2026-07-29 05:17:09 | DEBUG    | trading_bot.client | REQUEST POST http://127.0.0.1:8899/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1785302229266, 'recvWindow': 5000}
+2026-07-29 05:17:09 | DEBUG    | trading_bot.client | RESPONSE status=200 body={"orderId": 1001, "symbol": "BTCUSDT", "status": "FILLED", "clientOrderId": "testcli1001", "price": "0", "avgPrice": "64123.50", "origQty": "0.01", "executedQty": "0.01", "type": "MARKET", "side": "BUY", "updateTime": 1785302229278}
+2026-07-29 05:17:09 | INFO     | trading_bot.orders | Order SUCCEEDED: orderId=1001 status=FILLED executedQty=0.01 avgPrice=64123.50
+2026-07-29 05:17:09 | INFO     | trading_bot.orders | Order request summary: symbol=BTCUSDT | side=SELL | type=LIMIT | quantity=0.02 | price=65000 | timeInForce=GTC
+2026-07-29 05:17:09 | DEBUG    | trading_bot.client | REQUEST POST http://127.0.0.1:8899/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.02', 'price': '65000', 'timeInForce': 'GTC', 'timestamp': 1785302229448, 'recvWindow': 5000}
+2026-07-29 05:17:09 | DEBUG    | trading_bot.client | RESPONSE status=200 body={"orderId": 1002, "symbol": "BTCUSDT", "status": "NEW", "clientOrderId": "testcli1002", "price": "65000", "avgPrice": "0.00000", "origQty": "0.02", "executedQty": "0", "type": "LIMIT", "side": "SELL", "updateTime": 1785302229450}
+2026-07-29 05:17:09 | INFO     | trading_bot.orders | Order SUCCEEDED: orderId=1002 status=NEW executedQty=0 avgPrice=0.00000
+2026-07-29 05:17:14 | INFO     | trading_bot.orders | Order request summary: symbol=ETHUSDT | side=BUY | type=STOP_LIMIT | quantity=0.5 | price=3000 | stopPrice=3050 | timeInForce=GTC
+2026-07-29 05:17:14 | DEBUG    | trading_bot.client | REQUEST POST http://127.0.0.1:8899/fapi/v1/order params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'STOP', 'quantity': '0.5', 'price': '3000', 'stopPrice': '3050', 'timeInForce': 'GTC', 'timestamp': 1785302234301, 'recvWindow': 5000}
+2026-07-29 05:17:14 | DEBUG    | trading_bot.client | RESPONSE status=200 body={"orderId": 1003, "symbol": "ETHUSDT", "status": "NEW", "clientOrderId": "testcli1003", "price": "3000", "avgPrice": "0.00000", "origQty": "0.5", "executedQty": "0", "type": "STOP", "side": "BUY", "updateTime": 1785302234303}
+2026-07-29 05:17:14 | INFO     | trading_bot.orders | Order SUCCEEDED: orderId=1003 status=NEW executedQty=0 avgPrice=0.00000
+2026-07-29 05:17:14 | ERROR    | trading_bot.cli | Input validation failed: Invalid symbol format: 'XX'. Expected a USDT-M pair like BTCUSDT.
