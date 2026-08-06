@@ -6,7 +6,7 @@ input validation, structured logging, and error handling.
 
 Built with direct REST calls (`requests` + HMAC-SHA256 signing) — no
 `python-binance` dependency required, so the request/response flow is fully
-transparent and easy to audit.
+transparent and easy to audit
 
 ## Project Structure
 
