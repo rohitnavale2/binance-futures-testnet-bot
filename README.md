@@ -2,7 +2,7 @@
 
 A small, structured Python CLI application for placing MARKET, LIMIT, and
 (bonus) STOP_LIMIT orders on the Binance USDT-M Futures Testnet, with proper
-input validation, structured logging, and error handling.
+input validation, structured logging, and error handling
 
 Built with direct REST calls (`requests` + HMAC-SHA256 signing) — no
 `python-binance` dependency required, so the request/response flow is fully
